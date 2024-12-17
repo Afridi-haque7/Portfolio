@@ -23,6 +23,8 @@ import {
   jobit,
   tripguide,
   threejs,
+  university,
+  guidance,
 } from "../assets";
 
 export const navLinks = [
@@ -113,7 +115,32 @@ const technologies = [
     icon: docker,
   },
 ];
-
+const educations = [
+  {
+    title: "B.E. in CSE",
+    institute_name: "Chandigarh University",
+    icon: university,
+    iconBg: "#383E56",
+    date: "Aug 2020 - June 2024",
+    marks: "7.91 CGPA out of 10",
+  },
+  {
+    title: "10+2 Boards (WBCHSE)",
+    institute_name: "Guidance Academy",
+    icon: guidance,
+    iconBg: "#383E56",
+    date: "March 2018 - March 2020",
+    marks: "93% marks in Science Stream",
+  },
+  {
+    title: "10 Boards (WBBSE)",
+    institute_name: "Guidance Academy",
+    icon: guidance,
+    iconBg: "#383E56",
+    date: "Jan 2017 - Feb 2018",
+    marks: "93% marks, Zonal Rank 1",
+  },
+];
 const experiences = [
   {
     title: "React.js Developer",
@@ -262,4 +289,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, testimonials, educations, projects };
