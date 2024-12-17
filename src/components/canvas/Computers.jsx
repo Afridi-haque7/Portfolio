@@ -4,25 +4,40 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
-const Computers = ({ isMobile }) => {
+const Computers = ({ isMobile, isTablet }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
+  let scale = 0.75,
+    position = [0, -3.5, -1.5];
 
+  if (isMobile) {
+    scale = 0.4;
+    position = [0, -2, -0.65];
+  } else if (isTablet) {
+    scale = 0.65;
+    position = [0, -3.75, -1];
+  }
   return (
-    <mesh>
-      <hemisphereLight intensity={0.15} groundColor="black" />
+    <mesh className="border">
+      <hemisphereLight intensity={2.8} groundColor="black" />
       <spotLight
         position={[-20, 50, 10]}
         angle={0.12}
         penumbra={1}
         intensity={1}
-        castShadow
+        castShadow={true}
         shadow-mapSize={1024}
       />
-      <pointLight intensity={1} />
+      <pointLight
+        intensity={3}
+        position={
+          isMobile ? [0, -0.5, 0.5] : isTablet ? [0, -0.5, 0.5] : [0, -0.5, 0.5]
+        }
+      />
       <primitive
+      autoRotate={true}
         object={computer.scene}
-        scale={isMobile ? 0.7 : 0.75}
-        position={isMobile ? [0, -3, -2.2] : [0, -4.25, -1.5]}
+        scale={scale}
+        position={position}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -31,25 +46,36 @@ const Computers = ({ isMobile }) => {
 
 const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [isTablet, setIsTablet] = useState(false);
 
   useEffect(() => {
     // Add a listener for changes to the screen size
-    const mediaQuery = window.matchMedia("(max-width: 500px)");
+    const mobileQuery = window.matchMedia("(max-width: 465px)");
+    const tabletQuery = window.matchMedia(
+      "(min-width: 465px) and (max-width: 768px)"
+    );
 
     // Set the initial value of the `isMobile` state variable
-    setIsMobile(mediaQuery.matches);
+    setIsMobile(mobileQuery.matches);
+    setIsTablet(tabletQuery.matches);
 
-    // Define a callback function to handle changes to the media query
-    const handleMediaQueryChange = (event) => {
+    // Define callback functions to handle changes to the media queries
+    const handleMobileQueryChange = (event) => {
       setIsMobile(event.matches);
     };
 
-    // Add the callback function as a listener for changes to the media query
-    mediaQuery.addEventListener("change", handleMediaQueryChange);
+    const handleTabletQueryChange = (event) => {
+      setIsTablet(event.matches);
+    };
 
-    // Remove the listener when the component is unmounted
+    // Add the callback function as a listener for changes to the media query
+    mobileQuery.addEventListener("change", handleMobileQueryChange);
+    tabletQuery.addEventListener("change", handleTabletQueryChange);
+
+    // Remove the listeners when the component is unmounted
     return () => {
-      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+      mobileQuery.removeEventListener("change", handleMobileQueryChange);
+      tabletQuery.removeEventListener("change", handleTabletQueryChange);
     };
   }, []);
 
@@ -67,7 +93,7 @@ const ComputersCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Computers isMobile={isMobile} />
+        <Computers isMobile={isMobile} isTablet={isTablet} />
       </Suspense>
 
       <Preload all />
