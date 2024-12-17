@@ -30,7 +30,12 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import guidance from "./guidance.png";
+import leftArrow from "./left-arrow.png";
+import rightArrow from "./right-arrow.png";
+
 export {
+  leftArrow,
+  rightArrow,
   logo,
   guidance,
   backend,
