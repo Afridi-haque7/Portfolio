@@ -3,20 +3,25 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Education from "./components/Education";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import StarsCanvas from "./components/canvas/Stars";
 function App() {
 
   return (
     <div className="relative z-0 bg-primary">
       <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
         <Navbar />
-        <Hero/>
+        <Hero />
       </div>
-
+      <About />
+      <Education />
+      <Projects />
       <div className="relative z-0">
-        <About/>
-        <Education/>
-        <Projects/>
+          <Contact />
+          <StarsCanvas />
       </div>
+      <Footer />
     </div>
   );
 }

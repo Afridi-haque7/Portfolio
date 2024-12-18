@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles.js";
 import ComputersCanvas from "./canvas/Computers.jsx";
+import HeroCamera from "./HeroCamera.jsx";
 
 const Hero = () => {
   return (
@@ -22,15 +23,15 @@ const Hero = () => {
         </div>
       </div>
 
-
-      <ComputersCanvas />
-
+      {/* <HeroCamera> */}
+        <ComputersCanvas />
+      {/* </HeroCamera> */}
       <div className="absolute xs:bottom-10 bottom-12 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[30px] h-[54px] rounded-3xl border-2 border-secondary flex justify-center items-start p-2">
             <motion.dev
-            animate={{
-              y: [0, 24, 0],
+              animate={{
+                y: [0, 24, 0],
               }}
               transition={{
                 duration: 1.5,
@@ -38,7 +39,7 @@ const Hero = () => {
                 repeatType: "loop",
               }}
               className="w-2 h-2 rounded-full bg-secondary mb-1"
-             />
+            />
           </div>
         </a>
       </div>
