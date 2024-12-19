@@ -199,48 +199,42 @@ const experiences = [
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
-
 const projects = [
   {
-    title: "Podcastr - AI Podcast Platform",
-    desc: "Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.",
+    title: "AutoCapGen Pro - Automatic Captions Generator",
+    desc: "Autocapgen Pro is a dynamic platform that revolutionizes video captioning. Designed to simplify the upload, transcription, and download process for caption-less videos, the system leverages Next.js and AWS S3 to deliver lightning-fast results—reducing video processing time by 28%.",
     subdesc:
-      "Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.",
-    href: "https://www.youtube.com/watch?v=zfAb95tJvZQ",
+      "Beyond efficiency, the platform offers a polished, user-centric interface crafted with Tailwind CSS. It empowers users to edit transcriptions effortlessly, customize text attributes, and synchronize captions with timestamps.",
+    href: "https://autocapgenpro-deploy.vercel.app",
     texture: "/textures/project/project1.mp4",
-    // logo: "/assets/project-logo1.png",
+    logo: "src/assets/project-logo1.png",
     logoStyle: {
       backgroundColor: "#2A1816",
       border: "0.2px solid #36201D",
       boxShadow: "0px 0px 60px 0px #AA3C304D",
     },
-    
+    tags: [
+      {
+        id: 1,
+        name: "Next.js",
+        path: "src/assets/tech/nextjs.png",
+      },
+      {
+        id: 2,
+        name: "TailwindCSS",
+        path: "src/assets/tech/tailwind.png",
+      },
+      {
+        id: 3,
+        name: "JavaScript",
+        path: "src/assets/tech/javascript.png",
+      },
+      {
+        id: 4,
+        name: "AWS",
+        path: "src/assets/tech/aws.svg",
+      },
+    ],
   },
   {
     title: "LiveDoc - Real-Time Google Docs Clone",
@@ -249,13 +243,34 @@ const projects = [
       "With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.",
     href: "https://www.youtube.com/watch?v=y5vE8y_f_OM",
     texture: "/textures/project/project2.mp4",
-    // logo: "/assets/project-logo2.png",
+    logo: "src/assets/project-logo2.png",
     logoStyle: {
       backgroundColor: "#13202F",
       border: "0.2px solid #17293E",
       boxShadow: "0px 0px 60px 0px #2F6DB54D",
     },
-    
+    tags: [
+      {
+        id: 1,
+        name: "Next.js",
+        path: "src/assets/tech/nextjs.svg",
+      },
+      {
+        id: 2,
+        name: "TailwindCSS",
+        path: "src/assets/tech/tailwind.png",
+      },
+      {
+        id: 3,
+        name: "JavaScript",
+        path: "src/assets/tech/javascript.png",
+      },
+      {
+        id: 4,
+        name: "AWS",
+        path: "src/assets/tech/aws.svg",
+      },
+    ],
   },
   {
     title: "CarePulse - Health Management System",
@@ -264,7 +279,7 @@ const projects = [
       "With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.",
     href: "https://www.youtube.com/watch?v=lEflo_sc82g",
     texture: "/textures/project/project3.mp4",
-    // logo: "/assets/project-logo3.png",
+    logo: "src/assets/project-logo3.png",
     logoStyle: {
       backgroundColor: "#60f5a1",
       background:
@@ -272,7 +287,28 @@ const projects = [
       border: "0.2px solid rgba(208, 213, 221, 1)",
       boxShadow: "0px 0px 60px 0px rgba(35, 131, 96, 0.3)",
     },
-    
+    tags: [
+      {
+        id: 1,
+        name: "Next.js",
+        path: "src/assets/tech/nextjs.svg",
+      },
+      {
+        id: 2,
+        name: "TailwindCSS",
+        path: "src/assets/tech/tailwind.png",
+      },
+      {
+        id: 3,
+        name: "JavaScript",
+        path: "src/assets/tech/javascript.png",
+      },
+      {
+        id: 4,
+        name: "AWS",
+        path: "src/assets/tech/aws.svg",
+      },
+    ],
   },
   {
     title: "Horizon - Online Banking Platform",
@@ -281,13 +317,34 @@ const projects = [
       "Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.",
     href: "https://www.youtube.com/watch?v=PuOVqP_cjkE",
     texture: "/textures/project/project4.mp4",
-    // logo: "/assets/project-logo4.png",
+    logo: "src/assets/project-logo4.png",
     logoStyle: {
       backgroundColor: "#0E1F38",
       border: "0.2px solid #0E2D58",
       boxShadow: "0px 0px 60px 0px #2F67B64D",
     },
-    
+    tags: [
+      {
+        id: 1,
+        name: "Next.js",
+        path: "src/assets/tech/nextjs.svg",
+      },
+      {
+        id: 2,
+        name: "TailwindCSS",
+        path: "src/assets/tech/tailwind.png",
+      },
+      {
+        id: 3,
+        name: "JavaScript",
+        path: "src/assets/tech/javascript.png",
+      },
+      {
+        id: 4,
+        name: "AWS",
+        path: "src/assets/tech/aws.svg",
+      },
+    ],
   },
   {
     title: "Imaginify - AI Photo Manipulation App",
@@ -296,13 +353,34 @@ const projects = [
       "Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.",
     href: "https://www.youtube.com/watch?v=Ahwoks_dawU",
     texture: "/textures/project/project5.mp4",
-    // logo: "/assets/project-logo5.png",
+    logo: "src/assets/project-logo5.png",
     logoStyle: {
       backgroundColor: "#1C1A43",
       border: "0.2px solid #252262",
       boxShadow: "0px 0px 60px 0px #635BFF4D",
     },
-    
+    tags: [
+      {
+        id: 1,
+        name: "Next.js",
+        path: "src/assets/tech/nextjs.png",
+      },
+      {
+        id: 2,
+        name: "TailwindCSS",
+        path: "src/assets/tech/tailwind.png",
+      },
+      {
+        id: 3,
+        name: "JavaScript",
+        path: "src/assets/tech/javascript.png",
+      },
+      {
+        id: 4,
+        name: "AWS",
+        path: "src/assets/tech/aws.svg",
+      },
+    ],
   },
 ];
 
@@ -320,7 +398,9 @@ const socials = [
   {
     name: "Instagram",
     icon: instagram,
-    link: "https://www.linkedin.com/in/afridi-haque-851924203/",
+    link: "https://www.instagram.com/afridi_hq07/",
   },
 ];
-export { socials, services, technologies, experiences, testimonials, educations, projects };
+
+
+export { socials, services, technologies, experiences, educations, projects };

@@ -100,7 +100,7 @@ const Contact = () => {
 
           <button
             type="submit"
-            className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md"
+            className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md hover:scale-125 transition-all duration-300 ease-in-out"
           >
             {loading ? "Sending..." : "Send"}
           </button>
@@ -112,7 +112,6 @@ const Contact = () => {
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
       >
         <EarthCanvas />
-
 
         <div className="relative bottom-[50px] md:bottom-[100px] w-full flex justify-center items-center">
           <div className="w-[30px] h-[54px] rounded-3xl border-2 border-secondary flex justify-center items-start p-2">
