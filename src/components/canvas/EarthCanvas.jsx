@@ -1,21 +1,54 @@
-import { Suspense } from "react";
+import { Suspense, useState, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
-const Earth = () => {
+const Earth = ({ isMobile, isTablet }) => {
   const earth = useGLTF("./planet/scene.gltf");
   return (
-      <primitive
-        object={earth.scene}
-        scale={2}
-        position-y={0}
-        rotation-y={0}
-      />
+    <primitive 
+    object={earth.scene} 
+    scale={isMobile ? 2.5 : (isTablet ? 2.5: 2)} 
+    position-y={0} 
+    rotation-y={0} />
   );
 };
 
 const EarthCanvas = () => {
+  const [isMobile, setIsMobile] = useState(false);
+  const [isTablet, setIsTablet] = useState(false);
+
+  useEffect(() => {
+    // Add a listener for changes to the screen size
+    const mobileQuery = window.matchMedia("(max-width: 465px)");
+    const tabletQuery = window.matchMedia(
+      "(min-width: 465px) and (max-width: 768px)"
+    );
+
+    // Set the initial value of the `isMobile` state variable
+    setIsMobile(mobileQuery.matches);
+    setIsTablet(tabletQuery.matches);
+
+    // Define callback functions to handle changes to the media queries
+    const handleMobileQueryChange = (event) => {
+      setIsMobile(event.matches);
+    };
+
+    const handleTabletQueryChange = (event) => {
+      setIsTablet(event.matches);
+    };
+
+    // Add the callback function as a listener for changes to the media query
+    mobileQuery.addEventListener("change", handleMobileQueryChange);
+    tabletQuery.addEventListener("change", handleTabletQueryChange);
+
+    // Remove the listeners when the component is unmounted
+    return () => {
+      mobileQuery.removeEventListener("change", handleMobileQueryChange);
+      tabletQuery.removeEventListener("change", handleTabletQueryChange);
+    };
+  }, []);
+
   return (
     <Canvas
       shadows
@@ -35,7 +68,7 @@ const EarthCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Earth />
+        <Earth isMobile={isMobile} isTablet={isTablet} />
       </Suspense>
     </Canvas>
   );

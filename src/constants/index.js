@@ -25,6 +25,9 @@ import {
   threejs,
   university,
   guidance,
+  instagram,
+  github,
+  linkedin,
 } from "../assets";
 
 export const navLinks = [
@@ -303,4 +306,21 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, educations, projects };
+const socials = [
+  {
+    name: "LinkedIn",
+    icon: linkedin,
+    link: "https://www.linkedin.com/in/afridi-haque-851924203/",
+  },
+  {
+    name: "Github",
+    icon: github,
+    link: "https://github.com/Afridi-haque7",
+  },
+  {
+    name: "Instagram",
+    icon: instagram,
+    link: "https://www.linkedin.com/in/afridi-haque-851924203/",
+  },
+];
+export { socials, services, technologies, experiences, testimonials, educations, projects };

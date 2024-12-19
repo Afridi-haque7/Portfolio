@@ -3,7 +3,7 @@ import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
-import github from "./github.png";
+// import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import university from "./university.png";
@@ -32,8 +32,13 @@ import tripguide from "./tripguide.png";
 import guidance from "./guidance.png";
 import leftArrow from "./left-arrow.png";
 import rightArrow from "./right-arrow.png";
-
+import github from "./github.svg";
+import instagram from "./instagram.svg";
+import linkedin from "./new-linkedin.svg";
 export {
+  github,
+  instagram,
+  linkedin,
   leftArrow,
   rightArrow,
   logo,
@@ -42,7 +47,6 @@ export {
   creator,
   mobile,
   web,
-  github,
   menu,
   close,
   css,

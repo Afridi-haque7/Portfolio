@@ -51,10 +51,10 @@ const Contact = () => {
     )
     };
   return (
-    <div className="xl:mt-12 flex md:flex-row flex-col-reverse gap-8 overflow-hidden">
+    <div className="xl:mt-12 flex lg:flex-row flex-col-reverse gap-8 overflow-hidden">
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
+        className="flex-[0.75] bg-black-100 p-8 rounded-2xl min-w-[350px]"
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact</h3>
@@ -112,6 +112,23 @@ const Contact = () => {
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
       >
         <EarthCanvas />
+
+
+        <div className="relative bottom-[50px] md:bottom-[100px] w-full flex justify-center items-center">
+          <div className="w-[30px] h-[54px] rounded-3xl border-2 border-secondary flex justify-center items-start p-2">
+            <motion.dev
+              animate={{
+                y: [0, 25, 0],
+              }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+              className="w-2 h-2 rounded-full bg-secondary mb-1"
+            />
+          </div>
+        </div>
       </motion.div>
     </div>
   );
