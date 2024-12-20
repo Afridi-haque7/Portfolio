@@ -36,10 +36,9 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia,
-        ratione illum ad quis alias voluptas maxime ipsa minus voluptatum eaque
-        illo quibusdam amet inventore esse praesentium, voluptate totam eligendi
-        id!
+        I am a Full stack developer from Kolkata, India specializing in React,
+        Next.js, and TypeScript. I create innovative web solutions and
+        contribute to open-source projects.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

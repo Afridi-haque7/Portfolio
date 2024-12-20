@@ -7,6 +7,8 @@ import {
   typescript,
   html,
   css,
+  c, 
+  python,
   reactjs,
   redux,
   tailwind,
@@ -14,13 +16,11 @@ import {
   nodejs,
   mongodb,
   git,
-  figma,
   docker,
   meta,
   starbucks,
   tesla,
   shopify,
-  threejs,
   university,
   guidance,
   instagram,
@@ -50,11 +50,11 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Software Engineer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Frontend Developer",
     icon: mobile,
   },
   {
@@ -62,7 +62,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "AI Engineer",
     icon: creator,
   },
 ];
@@ -105,16 +105,16 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "c++",
+    icon: c,
+  },
+  {
+    name: "python",
+    icon: python,
   },
   {
     name: "docker",
