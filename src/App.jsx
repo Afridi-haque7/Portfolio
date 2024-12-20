@@ -6,6 +6,9 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import StarsCanvas from "./components/canvas/Stars";
+import Skills from "./components/Skills";
+
+
 function App() {
 
   return (
@@ -16,6 +19,7 @@ function App() {
       </div>
       <About />
       <Education />
+      <Skills />
       <Projects />
       <div className="relative z-0">
           <Contact />

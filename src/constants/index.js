@@ -253,7 +253,7 @@ const projects = [
       {
         id: 1,
         name: "Next.js",
-        path: "src/assets/tech/nextjs.svg",
+        path: "src/assets/tech/nextjs.png",
       },
       {
         id: 2,
@@ -291,7 +291,7 @@ const projects = [
       {
         id: 1,
         name: "Next.js",
-        path: "src/assets/tech/nextjs.svg",
+        path: "src/assets/tech/nextjs.png",
       },
       {
         id: 2,
@@ -327,7 +327,7 @@ const projects = [
       {
         id: 1,
         name: "Next.js",
-        path: "src/assets/tech/nextjs.svg",
+        path: "src/assets/tech/nextjs.png",
       },
       {
         id: 2,
