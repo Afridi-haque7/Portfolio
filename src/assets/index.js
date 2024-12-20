@@ -37,7 +37,21 @@ import arrowUp from "./arrow-up.png";
 import github from "./github.svg";
 import instagram from "./instagram.svg";
 import linkedin from "./new-linkedin.svg";
+import projectLogo1 from "./project-logo1.png";
+import projectLogo2 from "./project-logo2.png";
+import projectLogo3 from "./project-logo3.png";
+import projectLogo4 from "./project-logo4.png";
+import projectLogo5 from "./project-logo5.png";
+
+
+
+
 export {
+  projectLogo1,
+  projectLogo2,
+  projectLogo3,
+  projectLogo4,
+  projectLogo5,
   github,
   instagram,
   linkedin,
