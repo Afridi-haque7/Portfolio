@@ -10,7 +10,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import StarsCanvas from "./components/canvas/Stars";
 import Skills from "./components/Skills";
-
+import BackgroundMusic from "./components/Music";
 
 function App() {
   const [mousePosition, setMousePosition] = useState({

@@ -26,6 +26,8 @@ const Hero = () => {
       {/* <HeroCamera> */}
         <ComputersCanvas />
       {/* </HeroCamera> */}
+
+
       <div className="absolute xs:bottom-10 bottom-12 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[30px] h-[54px] rounded-3xl border-2 border-secondary flex justify-center items-start p-2">

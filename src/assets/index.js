@@ -3,7 +3,8 @@ import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
-
+import play from "./play.png";
+import pause from "./pause.png";
 
 import menu from "./menu.svg";
 import close from "./close.svg";
@@ -55,6 +56,8 @@ export {
   projectLogo3,
   projectLogo4,
   projectLogo5,
+  play,
+  pause,
   github,
   instagram,
   linkedin,
