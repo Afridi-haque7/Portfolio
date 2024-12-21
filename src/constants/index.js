@@ -5,9 +5,7 @@ import {
   web,
   javascript,
   typescript,
-  html,
-  css,
-  c, 
+  nextsvg,
   python,
   reactjs,
   redux,
@@ -69,14 +67,6 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
     name: "JavaScript",
     icon: javascript,
   },
@@ -91,6 +81,10 @@ const technologies = [
   {
     name: "Redux Toolkit",
     icon: redux,
+  },
+  {
+    name: "nextjs",
+    icon: nextsvg,
   },
   {
     name: "Tailwind CSS",
@@ -109,16 +103,8 @@ const technologies = [
     icon: git,
   },
   {
-    name: "c++",
-    icon: c,
-  },
-  {
     name: "python",
     icon: python,
-  },
-  {
-    name: "docker",
-    icon: docker,
   },
 ];
 const educations = [

@@ -20,6 +20,7 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import python from "./tech/python.png";
 import c from "./tech/c++.png";
+import nextsvg from "./tech/nextjs.svg";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
@@ -76,6 +77,7 @@ export {
   javascript,
   mongodb,
   nodejs,
+  nextsvg,
   reactjs,
   nextjs,
   redux,
