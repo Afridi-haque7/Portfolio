@@ -11,7 +11,7 @@ const Computers = ({ isMobile, isTablet }) => {
 
   if (isMobile) {
     scale = 0.4;
-    position = [0, -2, -0.65];
+    position = [0, -1, -0.65];
   } else if (isTablet) {
     scale = 0.65;
     position = [0, -3.75, -1];
@@ -29,7 +29,7 @@ const Computers = ({ isMobile, isTablet }) => {
       <pointLight
         intensity={3}
         position={
-          isMobile ? [0, -0.5, 0.5] : isTablet ? [0, -0.5, 0.5] : [0, -0.5, 0.5]
+          isMobile ? [0, 0.55, 0.5] : isTablet ? [0, -0.5, 0.5] : [0, -0.5, 0.5]
         }
       />
       <primitive

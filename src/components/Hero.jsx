@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles.js";
 import ComputersCanvas from "./canvas/Computers.jsx";
-import HeroCamera from "./HeroCamera.jsx";
+// import HeroCamera from "./HeroCamera.jsx";
 
 const Hero = () => {
   return (
@@ -28,7 +28,7 @@ const Hero = () => {
       {/* </HeroCamera> */}
 
 
-      <div className="absolute xs:bottom-10 bottom-12 w-full flex justify-center items-center">
+      <div className="absolute xs:bottom-10 bottom-[230px] w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[30px] h-[54px] rounded-3xl border-2 border-secondary flex justify-center items-start p-2">
             <motion.dev
