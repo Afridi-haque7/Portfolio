@@ -7,7 +7,7 @@ import { Center, OrbitControls } from "@react-three/drei";
 import { projects } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { motion } from "framer-motion";
-import { textVariant, slideIn } from "../utils/motion";
+import { textVariant } from "../utils/motion";
 import { styles } from "../styles";
 import { leftArrow, rightArrow, arrowUp } from "../assets/index.js";
 
@@ -48,19 +48,10 @@ const Projects = () => {
 
       <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
         <motion.div
-          // variants={slideIn("left", "tween", 0.2, 1)}
           className="flex flex-col gap-5  
         relative sm:p-10 py-10 px-5 shadow-md
          bg-black-400 shadow-violet-600 rounded-2xl"
         >
-          {/* <div className="absolute top-0 right-0">
-            <img
-              src={currentProject.spotlight}
-              alt="spotlight"
-              className="w-full h-96 object-cover rounded-xl"
-            />
-          </div> */}
-
           <div
             className="p-3 backdrop-filter backdrop-blur-3xl w-fit rounded-lg"
             style={currentProject.logoStyle}
@@ -123,10 +114,7 @@ const Projects = () => {
           </div>
         </motion.div>
 
-        <motion.div
-          // variants={slideIn("right", "tween", 0.2, 1)}
-          className="border border-black-300 bg-black-200 rounded-lg h-96 md:h-full"
-        >
+        <motion.div className="border border-black-300 bg-black-200 rounded-lg h-96 md:h-full">
           <Canvas>
             <ambientLight intensity={Math.PI} />
             <directionalLight position={[10, 10, 5]} />

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { play, pause } from "../assets/index.js";
 const BackgroundMusic = ({ src }) => {
   const [isPlaying, setIsPlaying] = useState(false);

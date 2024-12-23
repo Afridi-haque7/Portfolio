@@ -1,6 +1,5 @@
 import { socials } from "../constants";
 
-
 const Footer = () => {
   return (
     <section
@@ -39,6 +38,6 @@ const Footer = () => {
       </div>
     </section>
   );
-}
+};
 
 export default Footer;

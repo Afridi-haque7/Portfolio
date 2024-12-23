@@ -14,7 +14,6 @@ import {
   nodejs,
   mongodb,
   git,
-  docker,
   meta,
   starbucks,
   tesla,

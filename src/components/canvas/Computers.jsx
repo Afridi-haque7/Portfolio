@@ -33,7 +33,7 @@ const Computers = ({ isMobile, isTablet }) => {
         }
       />
       <primitive
-      autoRotate={true}
+        autoRotate={true}
         object={computer.scene}
         scale={scale}
         position={position}
