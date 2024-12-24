@@ -198,7 +198,8 @@ const projects = [
     subdesc:
       "Beyond efficiency, the platform offers a polished, user-centric interface crafted with Tailwind CSS. It empowers users to edit transcriptions effortlessly, customize text attributes, and synchronize captions with timestamps.",
     href: "https://autocapgenpro-deploy.vercel.app",
-    texture: "/textures/project/project1.mp4",
+    texture:
+      "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/public/textures/project/project1.mp4",
     logo: projectLogo1,
     logoStyle: {
       backgroundColor: "#2A1816",
@@ -234,7 +235,8 @@ const projects = [
     subdesc:
       "With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.",
     href: "www.example.com",
-    texture: "/textures/project/project2.mp4",
+    texture:
+      "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/public/textures/project/project2.mp4",
     logo: projectLogo2,
     logoStyle: {
       backgroundColor: "#13202F",
@@ -270,7 +272,8 @@ const projects = [
     subdesc:
       "With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.",
     href: "www.example.com",
-    texture: "/textures/project/project3.mp4",
+    texture:
+      "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/public/textures/project/project3.mp4",
     logo: projectLogo3,
     logoStyle: {
       backgroundColor: "#60f5a1",
@@ -308,7 +311,8 @@ const projects = [
     subdesc:
       "Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.",
     href: "www.example.com",
-    texture: "/textures/project/project4.mp4",
+    texture:
+      "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/public/textures/project/project4.mp4",
     logo: projectLogo4,
     logoStyle: {
       backgroundColor: "#0E1F38",
@@ -344,7 +348,8 @@ const projects = [
     subdesc:
       "Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.",
     href: "https://www.example.com",
-    texture: "/textures/project/project5.mp4",
+    texture:
+      "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/public/textures/project/project5.mp4",
     logo: projectLogo5,
     logoStyle: {
       backgroundColor: "#1C1A43",

@@ -1,11 +1,13 @@
-import React, { Suspense, useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile, isTablet }) => {
-  const computer = useGLTF("./desktop_pc/scene.gltf");
+  const computer = useGLTF(
+    "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/public/desktop_pc/scene.gltf"
+  );
   let scale = 0.75,
     position = [0, -3.5, -1.5];
 

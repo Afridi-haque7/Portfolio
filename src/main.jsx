@@ -10,7 +10,7 @@ import BackgroundMusic from "./components/Music";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
-      <BackgroundMusic src="/song.mp3" />
+      <BackgroundMusic src="https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/public/song.mp3" />
       <App />
     </BrowserRouter>
   </StrictMode>

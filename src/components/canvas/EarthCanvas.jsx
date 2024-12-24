@@ -4,7 +4,9 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Earth = ({ isMobile, isTablet }) => {
-  const earth = useGLTF("./planet/scene.gltf");
+  const earth = useGLTF(
+    "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/public/planet/scene.gltf"
+  );
   return (
     <primitive 
     object={earth.scene} 
