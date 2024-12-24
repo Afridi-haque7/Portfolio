@@ -1,34 +1,17 @@
-import {
-  mobile,
-  backend,
-  creator,
-  web,
+import Assets from "../assets";
+import { 
+    git,
   javascript,
-  typescript,
+  mongodb,
+  nodejs,
   nextsvg,
-  python,
   reactjs,
   redux,
+  python,
   tailwind,
-  nextjs,
-  nodejs,
-  mongodb,
-  git,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  university,
-  guidance,
-  instagram,
-  github,
-  linkedin,
-  projectLogo1,
-  projectLogo2,
-  projectLogo3,
-  projectLogo4,
-  projectLogo5,
+  typescript,
 } from "../assets";
+
 
 export const navLinks = [
   {
@@ -52,19 +35,19 @@ export const navLinks = [
 const services = [
   {
     title: "Software Engineer",
-    icon: web,
+    icon: Assets.web,
   },
   {
     title: "Frontend Developer",
-    icon: mobile,
+    icon: Assets.mobile,
   },
   {
     title: "Backend Developer",
-    icon: backend,
+    icon: Assets.backend,
   },
   {
     title: "AI Engineer",
-    icon: creator,
+    icon: Assets.creator,
   },
 ];
 
@@ -110,11 +93,12 @@ const technologies = [
     icon: python,
   },
 ];
+
 const educations = [
   {
     title: "B.E. in CSE",
     institute_name: "Chandigarh University",
-    icon: university,
+    icon: Assets.university,
     iconBg: "#383E56",
     date: "Aug 2020 - June 2024",
     marks: "7.91 CGPA out of 10",
@@ -122,7 +106,7 @@ const educations = [
   {
     title: "10+2 Boards (WBCHSE)",
     institute_name: "Guidance Academy",
-    icon: guidance,
+    icon: Assets.guidance,
     iconBg: "#383E56",
     date: "March 2018 - March 2020",
     marks: "93% marks in Science Stream",
@@ -130,64 +114,10 @@ const educations = [
   {
     title: "10 Boards (WBBSE)",
     institute_name: "Guidance Academy",
-    icon: guidance,
+    icon: Assets.guidance,
     iconBg: "#383E56",
     date: "Jan 2017 - Feb 2018",
     marks: "93% marks, Zonal Rank 1",
-  },
-];
-const experiences = [
-  {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
   },
 ];
 
@@ -200,7 +130,7 @@ const projects = [
     href: "https://autocapgenpro-deploy.vercel.app",
     texture:
       "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/public/textures/project/project1.mp4",
-    logo: projectLogo1,
+    logo: Assets.projectLogo1,
     logoStyle: {
       backgroundColor: "#2A1816",
       border: "0.2px solid #36201D",
@@ -210,22 +140,22 @@ const projects = [
       {
         id: 1,
         name: "Next.js",
-        path: nextjs,
+        path: Assets.nextjs,
       },
       {
         id: 2,
         name: "TailwindCSS",
-        path: tailwind,
+        path: Assets.tailwind,
       },
       {
         id: 3,
         name: "JavaScript",
-        path: javascript,
+        path: Assets.javascript,
       },
       {
         id: 4,
         name: "AWS",
-        path: mongodb,
+        path: Assets.mongodb,
       },
     ],
   },
@@ -237,7 +167,7 @@ const projects = [
     href: "www.example.com",
     texture:
       "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/public/textures/project/project2.mp4",
-    logo: projectLogo2,
+    logo: Assets.projectLogo2,
     logoStyle: {
       backgroundColor: "#13202F",
       border: "0.2px solid #17293E",
@@ -247,22 +177,22 @@ const projects = [
       {
         id: 1,
         name: "Next.js",
-        path: nextjs,
+        path: Assets.nextjs,
       },
       {
         id: 2,
         name: "TailwindCSS",
-        path: tailwind,
+        path: Assets.tailwind,
       },
       {
         id: 3,
         name: "JavaScript",
-        path: javascript,
+        path: Assets.javascript,
       },
       {
         id: 4,
         name: "AWS",
-        path: mongodb,
+        path: Assets.mongodb,
       },
     ],
   },
@@ -274,7 +204,7 @@ const projects = [
     href: "www.example.com",
     texture:
       "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/public/textures/project/project3.mp4",
-    logo: projectLogo3,
+    logo: Assets.projectLogo3,
     logoStyle: {
       backgroundColor: "#60f5a1",
       background:
@@ -286,22 +216,22 @@ const projects = [
       {
         id: 1,
         name: "Next.js",
-        path: nextjs,
+        path: Assets.nextjs,
       },
       {
         id: 2,
         name: "TailwindCSS",
-        path: tailwind,
+        path: Assets.tailwind,
       },
       {
         id: 3,
         name: "JavaScript",
-        path: javascript,
+        path: Assets.javascript,
       },
       {
         id: 4,
         name: "AWS",
-        path: mongodb,
+        path: Assets.mongodb,
       },
     ],
   },
@@ -313,7 +243,7 @@ const projects = [
     href: "www.example.com",
     texture:
       "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/public/textures/project/project4.mp4",
-    logo: projectLogo4,
+    logo: Assets.projectLogo4,
     logoStyle: {
       backgroundColor: "#0E1F38",
       border: "0.2px solid #0E2D58",
@@ -323,22 +253,22 @@ const projects = [
       {
         id: 1,
         name: "Next.js",
-        path: nextjs,
+        path: Assets.nextjs,
       },
       {
         id: 2,
         name: "TailwindCSS",
-        path: tailwind,
+        path: Assets.tailwind,
       },
       {
         id: 3,
         name: "JavaScript",
-        path: javascript,
+        path: Assets.javascript,
       },
       {
         id: 4,
         name: "AWS",
-        path: mongodb,
+        path: Assets.mongodb,
       },
     ],
   },
@@ -350,7 +280,7 @@ const projects = [
     href: "https://www.example.com",
     texture:
       "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/public/textures/project/project5.mp4",
-    logo: projectLogo5,
+    logo: Assets.projectLogo5,
     logoStyle: {
       backgroundColor: "#1C1A43",
       border: "0.2px solid #252262",
@@ -360,22 +290,22 @@ const projects = [
       {
         id: 1,
         name: "Next.js",
-        path: nextjs,
+        path: Assets.nextjs,
       },
       {
         id: 2,
         name: "TailwindCSS",
-        path: tailwind,
+        path: Assets.tailwind,
       },
       {
         id: 3,
         name: "JavaScript",
-        path: javascript,
+        path: Assets.javascript,
       },
       {
         id: 4,
         name: "AWS",
-        path: mongodb,
+        path: Assets.mongodb,
       },
     ],
   },
@@ -384,20 +314,20 @@ const projects = [
 const socials = [
   {
     name: "LinkedIn",
-    icon: linkedin,
+    icon: Assets.linkedin,
     link: "https://www.linkedin.com/in/afridi-haque-851924203/",
   },
   {
     name: "Github",
-    icon: github,
+    icon: Assets.github,
     link: "https://github.com/Afridi-haque7",
   },
   {
     name: "Instagram",
-    icon: instagram,
+    icon: Assets.instagram,
     link: "https://www.instagram.com/afridi_hq07/",
   },
 ];
 
 
-export { socials, services, technologies, experiences, educations, projects };
+export { socials, services, technologies, educations, projects };

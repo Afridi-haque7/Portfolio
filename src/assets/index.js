@@ -1,82 +1,19 @@
-import logo from "./logo.svg";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
-import play from "./play.png";
-import pause from "./pause.png";
-
-import menu from "./menu.svg";
-import close from "./close.svg";
-import university from "./university.png";
-import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
 import git from "./tech/git.png";
-import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import python from "./tech/python.png";
-import c from "./tech/c++.png";
 import nextsvg from "./tech/nextjs.svg";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
 import nextjs from "./tech/nextjs.png";
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
-
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
-import guidance from "./guidance.png";
-import leftArrow from "./left-arrow.png";
-import rightArrow from "./right-arrow.png";
-import arrowUp from "./arrow-up.png";
-import github from "./github.svg";
-import instagram from "./instagram.svg";
-import linkedin from "./new-linkedin.svg";
-import projectLogo1 from "./project-logo1.png";
-import projectLogo2 from "./project-logo2.png";
-import projectLogo3 from "./project-logo3.png";
-import projectLogo4 from "./project-logo4.png";
-import projectLogo5 from "./project-logo5.png";
-
 
 
 
 export {
-  projectLogo1,
-  projectLogo2,
-  projectLogo3,
-  projectLogo4,
-  projectLogo5,
-  play,
-  pause,
-  github,
-  instagram,
-  linkedin,
-  leftArrow,
-  rightArrow,
-  logo,
-  arrowUp,
-  guidance,
-  backend,
-  creator,
-  mobile,
-  web,
-  menu,
-  close,
-  css,
-  docker,
-  figma,
   git,
-  html,
   javascript,
   mongodb,
   nodejs,
@@ -84,17 +21,61 @@ export {
   reactjs,
   nextjs,
   redux,
-  c,
   python,
   tailwind,
   typescript,
-  threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
-  university,
 };
+
+
+
+const Assets = {
+  // tech
+  aws: "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/assets/tech/aws.svg",
+  git: "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/assets/tech/git.png",
+  javascript: "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/assets/tech/javascript.png",
+  mongodb: "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/assets/tech/mongodb.png",
+  nextjs: "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/assets/tech/nextjs.png",
+  nodejs: "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/assets/tech/nodejs.png",
+  python: "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/assets/tech/python.png",
+  reactjs: "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/assets/tech/reactjs.png",
+  redux: "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/assets/tech/redux.png",
+  tailwind: "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/assets/tech/tailwind.png",
+  typescript: "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/assets/tech/typescript.png",
+
+  // about card
+  web: "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/assets/web.png",
+  mobile: "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/assets/mobile.png",
+  creator: "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/assets/creator.png",
+  backend: "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/assets/backend.png",
+
+  // education
+  guidance: "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/assets/guidance.png",
+  university: "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/assets/university.png",
+
+  // projects icon
+  projectLogo1: "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/assets/project-logo1.png",
+  projectLogo2: "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/assets/project-logo2.png",
+  projectLogo3: "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/assets/project-logo3.png",
+  projectLogo4: "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/assets/project-logo4.png",
+  projectLogo5: "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/assets/project-logo5.png",
+
+  // arrows
+  rightArrow: "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/assets/right-arrow.png",
+  leftArrow: "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/assets/left-arrow.png",
+  arrowUp: "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/assets/arrow-up.png",
+
+  // socials
+  github: "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/assets/github.svg",
+  instagram: "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/assets/instagram.svg",
+  linkedin: "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/assets/new-linkedin.svg",
+
+  // other icons
+  play: "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/assets/play.png",
+  pause: "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/assets/pause.png",
+  menu: "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/assets/menu.svg",
+  close: "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/assets/close.svg",
+  logo: "https://portfolio-assets-storage.s3.ap-south-1.amazonaws.com/assets/logo.svg",
+
+}
+
+export default Assets;

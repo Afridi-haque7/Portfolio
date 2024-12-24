@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { play, pause } from "../assets/index.js";
+import Assets from "../assets/index.js";
 const BackgroundMusic = ({ src }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(null);
@@ -55,9 +55,9 @@ const BackgroundMusic = ({ src }) => {
         onClick={togglePlay}
       >
         {isPlaying ? (
-          <img src={play} alt="play" className="w-6 h-6" />
+          <img src={Assets.play} alt="play" className="w-6 h-6" />
         ) : (
-          <img src={pause} alt="pause" className="w-6 h-6" />
+          <img src={Assets.pause} alt="pause" className="w-6 h-6" />
         )}
       </button>
     </div>

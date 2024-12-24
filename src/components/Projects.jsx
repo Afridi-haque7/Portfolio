@@ -9,7 +9,7 @@ import { SectionWrapper } from "../hoc";
 import { motion } from "framer-motion";
 import { textVariant } from "../utils/motion";
 import { styles } from "../styles";
-import { leftArrow, rightArrow, arrowUp } from "../assets/index.js";
+import Assets from "../assets/index.js";
 
 import CanvasLoader from "./Loader.jsx";
 import DemoComputer from "./canvas/DemoComputer.jsx";
@@ -93,7 +93,7 @@ const Projects = () => {
               rel="noreferrer"
             >
               <p className="text-sm text-zinc-300">Check Live Site</p>
-              <img src={arrowUp} alt="arrow" className="w-3 h-3" />
+              <img src={Assets.arrowUp} alt="arrow" className="w-3 h-3" />
             </a>
           </div>
 
@@ -102,14 +102,22 @@ const Projects = () => {
               className="arrow-btn border border-slate-600 p-3 rounded-full hover:bg-zinc-700 transition-all duration-200 ease-in-out"
               onClick={() => handleNavigation("previous")}
             >
-              <img src={leftArrow} alt="left arrow" className="w-4 h-4" />
+              <img
+                src={Assets.leftArrow}
+                alt="left arrow"
+                className="w-4 h-4"
+              />
             </button>
 
             <button
               className="arrow-btn border border-slate-500 p-3 rounded-full hover:bg-zinc-700 transition-all duration-200 ease-in-out"
               onClick={() => handleNavigation("next")}
             >
-              <img src={rightArrow} alt="right arrow" className="w-4 h-4" />
+              <img
+                src={Assets.rightArrow}
+                alt="right arrow"
+                className="w-4 h-4"
+              />
             </button>
           </div>
         </motion.div>

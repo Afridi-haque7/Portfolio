@@ -12,6 +12,8 @@ import CanvasLoader from "../Loader";
 
 const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl]);
+  console.log(decal);
+  
 
   return (
     <Float speed={2.75} rotationIntensity={1.5} floatIntensity={4}>
